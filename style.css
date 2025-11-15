@@ -34,6 +34,17 @@ h1 {
 
 em: Az aktuális elem vagy annak szülőelemének betűméretéhez viszonyít. Az em használata láncreakciót okozhat, ahol a szövegméret "elburjánzik" (compound effect), ha egymásba ágyazott elemeken használod, míg a rem konzisztens marad.*/
 
+h2 {
+    color: #bd93f9;
+    border-bottom: 2px  solid #503d7c;
+    padding-bottom: 20px;
+    margin-top: 40px;
+
+}
+h3 {
+    color: #ff79c6;
+}
+
 
 .goldman-regular {
   font-family: "Goldman", sans-serif;
