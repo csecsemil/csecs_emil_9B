@@ -14,10 +14,25 @@ body {
     padding: 30px;
     background: #2a0050;
     border-radius: 16px;
-    box-shadow: 0 8px 25px;
+    box-shadow: 0 8px 25px rgba(100, 0, 150, 0.5);
+}
+header {
+    background: #3a0070;
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 12px 12px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #8be9fd;
+    margin: 25px 0;/*vizszintes elem jobb és bal oldalán nincs margó*/
+    font-size: 3rem;
 }
 
+/*rem (root em): Mindig a gyökérelem (pl. <html>) betűméretéhez viszonyít.
 
+em: Az aktuális elem vagy annak szülőelemének betűméretéhez viszonyít. Az em használata láncreakciót okozhat, ahol a szövegméret "elburjánzik" (compound effect), ha egymásba ágyazott elemeken használod, míg a rem konzisztens marad.*/
 
 
 .goldman-regular {
