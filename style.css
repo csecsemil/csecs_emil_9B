@@ -73,14 +73,31 @@ tr:hover {
     background-color: #4a007c;
 }
 
-.galaxy-image {
+.section-image {
     display: flex;
     max-width: 100%;
     height: auto;
     margin: 30px auto;
-    border-radius: 10px;
-    border: 3px solid #bd93f9;
+    border-radius: 50px;
+    border: #bd93f9;
     box-shadow: 0 0 20px rgba(189, 147, 249, 0.4);
+}
+
+blockquote {
+    background: #300060;
+    border-left: 5px solid #8be9fd;
+    border-right: 5px solid #8be9fd;
+    margin: 1.5em 0;
+    padding: 1em 20px;
+    color: #ff79c6;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px;
 }
 
 
