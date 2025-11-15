@@ -64,8 +64,25 @@ th, td {
 th {
     background-color: #5c00b8;
     color: white;
-    font-weight: 600;
 }
+tr {
+    background-color: #38006d;
+}
+
+tr:hover {
+    background-color: #4a007c;
+}
+
+.galaxy-image {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 3px solid #bd93f9;
+    box-shadow: 0 0 20px rgba(189, 147, 249, 0.4);
+}
+
 
 
 .goldman-regular {
