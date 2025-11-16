@@ -58,6 +58,10 @@ button {
 ul {
     font-size: 40px;
 }
+ol {
+    color: #ffb86c;
+    font-size: 40px;
+}
 
 p {
     font-size: 40px;
@@ -166,7 +170,6 @@ footer a {
     width: 120px;
     height: 120px;
     margin: 10px auto;
-    object-fit: cover;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .planet-card img:hover {
