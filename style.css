@@ -134,6 +134,30 @@ footer a {
     text-decoration: none;
 }
 
+.planet-grid {
+    display: grid;/* CSS Grid használata a bolygók elrendezéséhez */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;/* Térköz a rácselemek között */
+    margin-top: 30px;/* Térköz a rács felett */
+}
+.planet-card {
+    background: #38006d;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #503d7c;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* Kartya stilus hoverre */
+.planet-card:hover {
+    box-shadow: 0 0px 25px rgba(255, 121, 198, 0.8);
+}
+
 
 
 .calculator-container {
