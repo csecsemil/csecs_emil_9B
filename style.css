@@ -158,16 +158,19 @@ footer a {
     box-shadow: 0 0px 25px rgba(255, 121, 198, 0.8);
 }
 .planet-card img {
+    box-shadow: none;
     display: block;
     width: 120px;
     height: 120px;
     margin: 10px auto;
-    border-radius: 50%;
-    border: 3px solid #8be9fd;
     object-fit: cover;
-    box-shadow: 0 0 15px rgba(139, 233, 253, 0.6);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+.planet-card img:hover {
+    transform: scale(4.98);
+}
+
+
     
 
 
