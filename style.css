@@ -118,6 +118,11 @@ blockquote {
     font-style: italic;
     border-radius: 4px;
 }
+code, kbd {
+            background-color: #5c00b8; /* Háttér a kód/kbd elemekhez */
+            padding: 2px 6px; /* Belső padding */
+            border-radius: 4px; /* Lekerekített sarkok */
+        }
 
 footer {
     margin-top: 40px;
@@ -128,6 +133,65 @@ footer a {
     color: #8be9fd;
     text-decoration: none;
 }
+
+
+
+.calculator-container {
+
+    background-color: #300060;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #bd93f9;
+}
+
+#earthWeight {
+    font-size: 50px;
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #4a007c; 
+    color: #ecf0f1; 
+}
+#planetSelect {
+    font-size: 50px;
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #4a007c; 
+    color: #ecf0f1; 
+    box-sizing: border-box; 
+}
+.calc-button {
+    font-size: 20px;
+    background-color: #ff79c6;
+    color: #1a0033;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+.calc-button:hover {
+    background-color: #ffb86c;
+    transform: translateY(-1px);
+}
+#weightResults {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5c00b8;
+    border-radius: 5px;
+    color: #8be9fd;
+    font-weight: bold;
+}
+
+
+
 
 a {
     color: #8be9fd;
