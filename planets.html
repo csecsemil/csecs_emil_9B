@@ -37,7 +37,153 @@
                 <li>Numerous moons, asteroids, and comets.</li>
             </ul>
         </section>
-            <h2></h2>
+
+        <section><h2>The Inner Terrestrial Planets</h2>
+            <div class="planet-grid">
+
+                <div class="planet-card">
+                    <h3>Earth: Our Home</h3>
+                    <p>Earth is the only astronomical object where life is known to exist. It is the third planet from the Sun and the densest, fifth-largest of the eight planets.</p>
+                </div>
+
+                <div class="planet-card">
+                    <h3>Mars: The Red Planet</h3>
+                    <p>Mars is a terrestrial planet with a thin atmosphere. It is known for its reddish-brown appearance caused by iron oxide (rust) on its surface. It has two moons, Phobos and Deimos.</p>
+                </div>
+
+                <div class="planet-card">
+                    <h3>Jupiter: The Giant</h3>
+                    <p>Jupiter is the largest planet in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined.</p>
+                </div>
+
+                <div class="planet-card">
+                    <h3>Saturn: The Ringed World</h3>
+                    <p>Known for its prominent ring system, Saturn is the second-largest planet. The rings are primarily made of ice particles and smaller amounts of rocky debris.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section>
+            <h2>Planetary Weight Converter (HTML JavaScript Demo)</h2>
+            <p>
+                Did you know your weight changes drastically depending on the gravity of the celestial body you're on? 
+                Use this converter to find out what your weight would be on another planet!
+            </p>
+
+            <div class="calculator-container"> <!-- Konténer a számológép stílusozásához -->
+                <div class="input-group"> <!-- Címke és bemenet csoportosítása a jobb elrendezés érdekében -->
+                    <!-- HTML Súly bemenet -->
+                    <label for="earthWeight">Your weight on Earth (kg):</label> <!-- Címke a beviteli mezőhöz -->
+                    <input type="number" id="earthWeight" value="60" min="1" step="0.1"> <!-- Numerikus bemenet a súlyhoz, alapértelmezett 60 kg -->
+                </div> <!-- Bemeneti csoport vége -->
+                
+                <div class="input-group"> <!-- Címke és kiválasztás csoportosítása a jobb elrendezés érdekében -->
+                    <!-- HTML Select (Legördülő menü) a bolygó kiválasztásához -->
+                    <label for="planetSelect">Select a Planet:</label> <!-- Címke a legördülő menühöz -->
+                    <select id="planetSelect"> <!-- Legördülő elem egyedi ID-vel -->
+                        <option value="Mercury">Mercury</option> 
+                        <option value="Venus">Venus</option> 
+                        <option value="Mars">Mars</option> 
+                        <option value="Jupiter">Jupiter</option> 
+                        <option value="Saturn">Saturn</option> 
+                        <option value="Uranus">Uranus</option> 
+                        <option value="Neptune">Neptune</option> 
+                    </select> <!-- Legördülő menü vége -->
+                </div> <!-- Bemeneti csoport vége -->
+
+            <button class="calc-button" onclick="calculateWeight()">Calculate Weight</button>
+
+            <!-- Kimeneti terület az eredményekhez -->
+             <p id="weightResults">Click "Calculate Weight" to see your cosmic weight!</p>
+            </div> <!-- Számológép konténer vége -->
+
+        </section>
+
+
+
+        <script>
+            // JavaScript function to calculate weight on different planets
+            const planetGravity = {
+                Mercury: 0.38,
+                Venus: 0.91,
+                Mars: 0.38,
+                Jupiter: 2.34,
+                Saturn: 1.06,
+                Uranus: 0.92,
+                Neptune: 1.19
+            };
+
+            function calculateWeight() {// Függvény, ami a gombra kattintáskor fut le
+                // 1. Felhasználói bemeneti értékek lekérése
+                const earthWeightInput = document.getElementById('earthWeight').value; // Földi súly lekérése
+                const selectedPlanet = document.getElementById('planetSelect').value; // Kiválasztott bolygó lekérése
+
+                const earthWeight = parseFloat(earthWeightInput); // Bemeneti érték átalakítása lebegőpontos számmá
+                const selectedPlanet = planetSelect.value; // Kiválasztott bolygó lekérése
+
+                if (isNaN(earthWeight) || earthWeight <= 0) {// Érvényes szám ellenőrzése
+                    document.getElementById('weightResults').innerText = "Please enter a valid weight greater than 0.";
+                    return; // Függvény futásának leállítása
+                }
+                // 3.számítás a kiválasztott bolygó gravitációs tényezőjével
+                const gravityMultiplier = planetGravity[selectedPlanet];// Gravitációs tényező lekérése
+                const planetaryWeight = earthWeight * gravityMultiplier; // Súly kiszámítása
+
+                // 4. Eredmény megjelenítése a HTML-ben
+                const resultElement = document.getElementById('weightResults');// Eredmény elem lekérése
+                resultElement.innerText = `Your weight on ${selectedPlanet} would be ${planetaryWeight.toFixed(2)} kg.`; // Eredmény megjelenítése két tizedesjegyre kerekítve
+            } // calculateWeight függvény vége
+        </script>
+
+
+
+
+
+
+
+
+        <section><h2>Key Planetary Data Comparison</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planet</th>
+                        <th>Type</th>
+                        <th>Distance (AU)</th>
+                        <th>Major Moons</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Mercury</th>
+                        <th>Terrestrial</th>
+                        <th>0.4 AU</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>Earth</th>
+                        <th>Terrestrial</th>
+                        <th>1.0 AU</th>
+                        <th>1 (The Moon)</th>
+                    </tr>
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>Gas Giant</td>
+                        <td>5.2 AU</td>
+                        <td>95+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+            
+        <footer>
+            <p>For more exploration, visit the <a href="https://www.nasa.gov/" >NASA Solar System Exploration</a> website.</p>
+        </footer>
+            
 
 
 
