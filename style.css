@@ -35,6 +35,7 @@ h1 {
 em: Az aktuális elem vagy annak szülőelemének betűméretéhez viszonyít. Az em használata láncreakciót okozhat, ahol a szövegméret "elburjánzik" (compound effect), ha egymásba ágyazott elemeken használod, míg a rem konzisztens marad.*/
 
 h2 {
+    font-size: 40px;
     color: #bd93f9;
     border-bottom: 2px  solid #503d7c;
     padding-bottom: 20px;
@@ -42,14 +43,33 @@ h2 {
 
 }
 h3 {
+    font-size: 40px;
     color: #ff79c6;
 }
+
+button {
+    background-color: #2a0050;
+    border: #1a0033;
+    border-radius: 14%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+ul {
+    font-size: 40px;
+}
+
+p {
+    font-size: 40px;
+}
+
 .highlight {
     font-weight: bold;
     color: #ff6e6e;
 }
 
 table {
+    font-size: 40px;
     width: 100%;
     margin: 25px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -73,6 +93,10 @@ tr:hover {
     background-color: #4a007c;
 }
 
+
+.section-title {
+    font-size: 40px;
+}
 .section-image {
     display: flex;
     max-width: 100%;
@@ -84,6 +108,7 @@ tr:hover {
 }
 
 blockquote {
+    font-size: 40px;
     background: #300060;
     border-left: 5px solid #8be9fd;
     border-right: 5px solid #8be9fd;
@@ -98,6 +123,16 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px;
+}
+footer a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+
+a {
+    color: #8be9fd;
+    margin: 25px 0;/*vizszintes elem jobb és bal oldalán nincs margó*/
+    font-size: 3rem;
 }
 
 
