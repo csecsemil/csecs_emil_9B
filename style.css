@@ -134,6 +134,9 @@ footer a {
     text-decoration: none;
 }
 
+
+
+
 .planet-grid {
     display: grid;/* CSS Grid használata a bolygók elrendezéséhez */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
